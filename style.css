@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+
+/* font-family: 'Red Hat Display', sans-serif; */
+
+:root {
+    
+    /* Primary colors */
+    --pale-blue:  hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+   
+    /* Neutral colors */
+    
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-color:  hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96vh;
+}
+
+
+.hero {
+  width: 100%;
+  height: 200px;
+  background: url(./images/illustration-hero.svg) no-repeat center center;
+}
+
+h1 {
+  color: hsl(223, 47%, 23%);
+  text-align: center;
+  margin-top: 25px;
+  padding: 15px 0;
+
+}
+
+p {
+  color:hsl(224, 23%, 55%);
+  font-size: 16px;
+  text-align: center;
+ 
+}
+
+.top-paragraph {
+  margin: 20px 50px;
+}
+
+
+.card {
+  
+  max-width: 450px;
+  min-height: 500px;
+  background-color: hsl(225, 100%, 98%);
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 50px 70px -100px;
+  box-shadow: 0 50px 50px -40px rgba(0, 0, 0, 0.5);
+}
+
+.plan-section {
+  margin: 20px 50px;
+  background-color: hsl(225, 100%, 95%);
+    border-radius: 12px;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan-section-left {
+  
+  display: flex;
+  align-items: center;
+  text-align: left;
+
+}
+
+
+
+
+.plan-section-left div h4 {
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: 15px;
+  color: hsl(223, 47%, 23%);
+}
+ .plan-section-left div p {
+   margin: none;
+ }
+
+
+
+
+
+.annual-plan {
+  margin-right: 75px;
+}
+
+
+
+.plan-section a {
+  text-align: justify;
+  text-decoration: underline;
+  color:hsl(245, 75%, 52%);
+  font-weight: bolder;
+}
+
+.plan-section a:hover {
+  color:  hsl(224, 23%, 55%);
+  transition: 0.75s;
+  text-decoration: none;
+}
+
+.payment {
+  margin: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.payment-button {
+ 
+    padding: 16px 30px;
+    border-radius: 10px;
+    
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    cursor: pointer;
+    font-weight: bolder;
+    border: none;
+}
+
+.payment-button:hover {
+  background-color: hsl(224, 23%, 55%);
+    transition: 0.5s;
+}
+
+.payment a {
+  margin: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color:hsl(224, 23%, 55%);
+}
+
+.payment a:hover{
+  color: hsl(223, 47%, 23%);
+  transition: 0.5s;
+}
+
+
+@media (max-width: 960px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+      height: 80%;
+      position: relative;
+      width: 100%;
+      margin: auto;        
+      top: 0;
+  }
+  
+  main {
+      flex-direction: column;
+      height: 100%;
+      margin: 50px 0;
+  }
+}
