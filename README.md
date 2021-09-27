@@ -33,7 +33,7 @@ I put the screenshot in the main files having a problem putting it here
 ### Links
 
 
-- Live Site URL: https://wizardly-ptolemy-a5102c.netlify.app/
+- Live Site URL: https://awesome-galileo-2a43af.netlify.app/
 
 ## My process
 
